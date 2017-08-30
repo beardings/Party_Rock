@@ -78,35 +78,36 @@
                                 <rect key="frame" x="0.0" y="220" width="375" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="80" id="0Ji-Yl-hkM" customClass="PartyCell" customModule="Party_Rock" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="90" id="0Ji-Yl-hkM" customClass="PartyCell" customModule="Party_Rock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ji-Yl-hkM" id="gB8-GP-z5j">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="obs-eC-hV2">
-                                                    <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                                    <rect key="frame" x="8" y="12.5" width="64" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="64" id="0qy-On-dew"/>
                                                         <constraint firstAttribute="height" constant="64" id="BWP-MJ-iE3"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-SZ-WVB">
-                                                    <rect key="frame" x="80" y="21" width="287" height="36"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="36" id="Qse-bW-fdF"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="80" y="27.5" width="287" height="35"/>
                                                     <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ofv-SZ-WVB" firstAttribute="centerY" secondItem="gB8-GP-z5j" secondAttribute="centerY" id="10r-hK-V2D"/>
+                                                <constraint firstItem="obs-eC-hV2" firstAttribute="leading" secondItem="gB8-GP-z5j" secondAttribute="leadingMargin" id="AkF-bh-l8e"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="obs-eC-hV2" secondAttribute="bottom" constant="5" id="KKJ-LM-iMv"/>
                                                 <constraint firstItem="obs-eC-hV2" firstAttribute="centerY" secondItem="gB8-GP-z5j" secondAttribute="centerY" id="Yh8-Vq-8Xj"/>
-                                                <constraint firstItem="Ofv-SZ-WVB" firstAttribute="trailing" secondItem="gB8-GP-z5j" secondAttribute="trailingMargin" id="eT3-CG-ytc"/>
+                                                <constraint firstItem="Ofv-SZ-WVB" firstAttribute="centerY" secondItem="gB8-GP-z5j" secondAttribute="centerY" id="i6Q-ND-aM1"/>
+                                                <constraint firstItem="Ofv-SZ-WVB" firstAttribute="trailing" secondItem="gB8-GP-z5j" secondAttribute="trailingMargin" id="l6K-Kn-Udg"/>
+                                                <constraint firstItem="Ofv-SZ-WVB" firstAttribute="leading" secondItem="obs-eC-hV2" secondAttribute="trailing" constant="8" id="nAJ-eX-mgR"/>
                                                 <constraint firstItem="obs-eC-hV2" firstAttribute="leading" secondItem="gB8-GP-z5j" secondAttribute="leading" constant="8" id="rdB-8J-sBR"/>
+                                                <constraint firstItem="obs-eC-hV2" firstAttribute="top" secondItem="gB8-GP-z5j" secondAttribute="topMargin" constant="4.5" id="sPu-2F-D6b"/>
                                                 <constraint firstItem="Ofv-SZ-WVB" firstAttribute="leading" secondItem="obs-eC-hV2" secondAttribute="trailing" constant="8" id="tc3-po-gbC"/>
                                             </constraints>
                                         </tableViewCellContentView>
